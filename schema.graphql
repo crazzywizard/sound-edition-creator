@@ -10,9 +10,13 @@ type SoundCreatorV2_Created {
   edition: String!
   owner: String!
   initData: String!
-  contracts: [String!]!
+  contract: String!
   data: [String!]!
   results: [String!]!
   eventsSummary: String!
   chainId: BigInt!
+  blockNumber: BigInt!
+  transactionHash: String!
+  blockHash: String!
+  timestamp: BigInt!
 }

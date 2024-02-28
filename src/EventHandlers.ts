@@ -35,10 +35,14 @@ SoundCreatorV2Contract_Created_handler(({ event, context }) => {
     edition: event.params.edition,
     owner: event.params.owner,
     initData: event.params.initData,
-    contracts: event.params.contracts,
+    contract: event.params.contracts[0],
     data: event.params.data,
     results: event.params.results,
     chainId: event.chainId as any as bigint,
+    blockNumber: event.blockNumber as any as bigint,
+    blockHash: event.blockHash,
+    transactionHash: event.transactionHash,
+    timestamp: event.blockTimestamp as any as bigint,
     eventsSummary: GLOBAL_EVENTS_SUMMARY_KEY
   };
 
