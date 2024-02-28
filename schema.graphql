@@ -14,4 +14,5 @@ type SoundCreatorV2_Created {
   data: [String!]!
   results: [String!]!
   eventsSummary: String!
+  chainId: BigInt!
 }
